@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "644271572263",
+    "project_id": "eilgoalmobile",
+    "storage_bucket": "eilgoalmobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644271572263:android:87b40e3c811e4fd8205502",
+        "android_client_info": {
+          "package_name": "com.example.eilgoal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAFkWjcfFHd9Ve3YBJG_d-_9nu2rvvgVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
