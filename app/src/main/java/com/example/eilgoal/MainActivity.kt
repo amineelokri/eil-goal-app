@@ -11,22 +11,23 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.eilgoal.ui.theme.EilGoalTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContent {
-            EilGoalTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
+        setContentView(R.layout.suivimatch)
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        val items=listOf<DataClass>(
+            DataClass(R.drawable.fcb,"FC Barcelona",R.drawable.mcity,"Manchester City"),
+            DataClass(R.drawable.arsenal,"Arsenal",R.drawable.mcity,"Manchester City"),
+            DataClass(R.drawable.arsenal,"Arsenal",R.drawable.fcb,"FC Barcelona")
+            )
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = ItemAdapter(items)
     }
 }
 
