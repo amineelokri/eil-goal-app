@@ -11,4 +11,6 @@
     <color name="gray">#808080</color>
     <color name="blue">#4267B2</color>
 
+    <color name="bgcolor">#141928</color>
+
 </resources>

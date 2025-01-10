@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">EilGoal</string>
     <string name="title_activity_login_page">loginPage</string>
+    <string name="title_activity_suivi_match">SuiviMatch</string>
 </resources>
