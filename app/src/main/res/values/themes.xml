@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.EilGoal" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Light/Dark Theme -->
+    <style name="Theme.EilGoal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+<!--        <item name="colorPrimary">@color/purple_500</item>-->
+<!--&lt;!&ndash;        <item name="colorPrimaryVariant">@color/purple_700</item>&ndash;&gt;-->
+<!--        <item name="colorOnPrimary">@color/white</item>-->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+    </style>
+
 </resources>

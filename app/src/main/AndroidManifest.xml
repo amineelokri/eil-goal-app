@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -13,16 +12,23 @@
         android:theme="@style/Theme.EilGoal"
         tools:targetApi="31">
         <activity
+            android:name=".loginPage.LoginPageActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login_page"
+            android:theme="@style/Theme.EilGoal"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.EilGoal">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                </intent-filter>
         </activity>
+        <activity android:name=".LoginSuccessActivity"/>
+        <activity android:name="com.example.eilco.RegisterActivity"/>
     </application>
 
 </manifest>

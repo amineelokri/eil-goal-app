@@ -1,0 +1,186 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E2D"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"/>
+        <!-- Title -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Welcome to Eil Goal."
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Enter your email address and password to use the application"
+            android:textSize="14sp"
+            android:textColor="#AAAAAA"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif" />
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Remember Me and Forgot Password Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/rememberMeCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#6C63FF" />
+
+            <TextView
+                android:id="@+id/forgotPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Forgot Password?"
+                android:textColor="#6C63FF"
+                android:textSize="14sp"
+                android:gravity="end"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Sign-In Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sign In"
+            android:background="@drawable/button_background_gradient"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Or Login With -->
+        <TextView
+            android:id="@+id/orLoginWithText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or Login With"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Social Media Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+
+
+            <Button
+                android:id="@+id/facebookLoginButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Facebook"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/facebook_svgrepo_com"
+                android:background="@color/blue"
+                />
+
+            <Button
+                android:id="@+id/googleSignInButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/googleimage_background"
+                android:drawablePadding="8dp"
+                android:text="GOOGLE"
+                android:background="#222232"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:elevation="4dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <!-- Register Link -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/beforeRegisterText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Don't have an account?"
+                    android:textColor="#5B5B60"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    />
+                <TextView
+                    android:id="@+id/registerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Register Now"
+                    android:textColor="#6C63FF"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -12,7 +12,12 @@
           "package_name": "com.example.eilgoal"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "644271572263-7nd34umajkrk1dmf3tfjqepj8e20k5a5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDAFkWjcfFHd9Ve3YBJG_d-_9nu2rvvgVs"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644271572263-7nd34umajkrk1dmf3tfjqepj8e20k5a5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
