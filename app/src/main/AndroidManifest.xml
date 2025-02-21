@@ -17,11 +17,11 @@
             android:exported="true"
             android:label="@string/title_activity_login_page"
             android:theme="@style/Theme.EilGoal"/>
-        <activity
-            android:name=".SuiviMatch"
-            android:exported="false"
-            android:label="@string/title_activity_suivi_match"
-            android:theme="@style/Theme.EilGoal" />
+<!--        <activity-->
+<!--            android:name=".SuiviMatch"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_suivi_match"-->
+<!--            android:theme="@style/Theme.EilGoal" />-->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -33,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
         </activity>
-        <activity android:name=".LoginSuccessActivity"/>
+        <activity android:name=".HomePageActivity"/>
         <activity android:name="com.example.eilco.RegisterActivity"/>
     </application>
 

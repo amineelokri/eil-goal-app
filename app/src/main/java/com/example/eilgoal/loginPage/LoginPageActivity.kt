@@ -8,7 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.eilco.RegisterActivity
-import com.example.eilgoal.LoginSuccessActivity
+import com.example.eilgoal.HomePageActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.example.eilgoal.R
 import com.google.firebase.FirebaseApp
@@ -71,7 +71,7 @@ class LoginPageActivity : AppCompatActivity() {
 
     private fun navigateToHomePage() {
         // Navigate to home page activity
-        val intent = Intent(this, LoginSuccessActivity::class.java)
+        val intent = Intent(this, HomePageActivity::class.java)
         startActivity(intent)
         finish() // Optionally finish the current activity
     }
