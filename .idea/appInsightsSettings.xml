@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.eilgoal" />
-                  <option name="mobileSdkAppId" value="1:644271572263:android:87b40e3c811e4fd8205502" />
-                  <option name="projectId" value="eilgoalmobile" />
-                  <option name="projectNumber" value="644271572263" />
+                  <option name="mobileSdkAppId" value="1:101164061474:android:2a3b604124a8396abb8b7b" />
+                  <option name="projectId" value="eilgoalmobile2" />
+                  <option name="projectNumber" value="101164061474" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

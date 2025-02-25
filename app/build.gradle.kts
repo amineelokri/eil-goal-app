@@ -50,7 +50,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
-    implementation (libs.recyclerview)
+    implementation(libs.recyclerview)
+    implementation(libs.firebase.database.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -61,11 +62,14 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.9.0"))
     implementation("com.google.firebase:firebase-auth")
 
     // Google Play Services Auth
     implementation("com.google.android.gms:play-services-auth:21.3.0")
     implementation("com.google.android.material:material:1.9.0")
-}
 
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+}
