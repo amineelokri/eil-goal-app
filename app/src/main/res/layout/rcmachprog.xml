@@ -1,78 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="20dp"-->
+<!--    android:background="@drawable/matchtimebg"-->
+<!--    android:padding="10dp">-->
+
+<!--    &lt;!&ndash; Équipe 1 : Nom &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/equipe"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="FC Barcelona"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        app:layout_constraintStart_toEndOf="@id/equipeImage"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--    &lt;!&ndash; Équipe 1 : Logo &ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/equipeImage"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:src="@drawable/fcblogo"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--    &lt;!&ndash; Date au centre &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Équipe 2 : Logo &ndash;&gt;-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/date"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="27 Aug 2022"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--         />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/equipe2Image"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:src="@drawable/mancity"-->
+<!--        app:layout_constraintTop_toTopOf="@id/equipeImage"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        />-->
+
+<!--    &lt;!&ndash; Équipe 2 : Nom &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/equipe2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Manchstercity"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        app:layout_constraintTop_toTopOf="@id/equipe"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/equipe2Image"/>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+app:cardCornerRadius="8dp"
+app:cardElevation="4dp"
+app:cardBackgroundColor="@color/googleimage_background">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    android:background="@drawable/matchtimebg"
-    android:padding="10dp">
+    android:padding="12dp">
 
-    <!-- Équipe 1 : Nom -->
+    <!-- Logo de l'équipe domicile -->
+    <ImageView
+        android:id="@+id/equipeImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="Logo équipe domicile"
+        android:src="@drawable/team_placeholder" />
+
+    <!-- Nom de l'équipe domicile -->
+
+    <!-- Date et heure du match, centré horizontalement -->
+
     <TextView
         android:id="@+id/equipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FC Barcelona"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        app:layout_constraintStart_toEndOf="@id/equipeImage"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <!-- Équipe 1 : Logo -->
-    <ImageView
-        android:id="@+id/equipeImage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="0dp"
-        android:src="@drawable/fcblogo"
-        android:layout_marginStart="5dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <!-- Date au centre -->
-
-    <!-- Équipe 2 : Logo -->
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@id/equipeImage"
+        android:text="Équipe Domicile"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        android:layout_centerVertical="true"
+        />
 
     <TextView
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="27 Aug 2022"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-         />
+        android:layout_centerHorizontal="true"
+        android:text="Date &amp; Heure"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        android:layout_centerVertical="true"
 
+        android:textStyle="bold" />
+
+    <!-- Logo de l'équipe visiteur, aligné à droite -->
     <ImageView
         android:id="@+id/equipe2Image"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/mancity"
-        app:layout_constraintTop_toTopOf="@id/equipeImage"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="10dp"
-        />
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="Logo équipe visiteur"
+        android:src="@drawable/team_placeholder" />
 
-    <!-- Équipe 2 : Nom -->
+    <!-- Nom de l'équipe visiteur, à gauche de l'image -->
     <TextView
         android:id="@+id/equipe2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Manchstercity"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_marginRight="5dp"
-        app:layout_constraintTop_toTopOf="@id/equipe"
-        app:layout_constraintEnd_toStartOf="@id/equipe2Image"/>
+        android:layout_marginEnd="7dp"
+        android:layout_toStartOf="@id/equipe2Image"
+        android:text="Équipe Visiteur"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>

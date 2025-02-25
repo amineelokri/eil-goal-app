@@ -39,12 +39,12 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/rightIcon"
+            android:id="@+id/fav"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/notificationicon" />
+            android:src="@drawable/ic_heart_filled" />
 
     </RelativeLayout>
 

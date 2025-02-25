@@ -72,7 +72,7 @@ class LoginPageActivity : AppCompatActivity() {
 
     private fun navigateToHomePage() {
         // Navigate to home page activity
-        val intent = Intent(this, MatchDetailsActivity::class.java)
+        val intent = Intent(this, HomePageActivity::class.java)
         startActivity(intent)
         finish() // Optionally finish the current activity
     }

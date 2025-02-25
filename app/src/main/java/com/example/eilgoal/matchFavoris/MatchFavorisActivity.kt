@@ -115,7 +115,7 @@ class MatchFavorisActivity : AppCompatActivity() {
         for (teamId in favoriteTeamIds) {
             // Exemple : on récupère les fixtures d'une équipe pour la saison 2024
             val call = apiService.getFixturesByTeam(
-                apiKey = "9510d4263e33d16ebf91e6edade56b12",   // Remplacez par votre clé API
+                apiKey = "b858f319bbe18daaa9c6da52158f7a16",   // Remplacez par votre clé API
                 teamId = teamId,
                 season = 2024
             )

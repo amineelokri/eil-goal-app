@@ -1,8 +1,9 @@
-package com.example.eilgoal
+package com.example.eilgoal.service
 
 data class DataClass(var equipeImage: String, var equipe: String, var equipe2Image: String, var equipe2:String,var date:String, var homeGoals: Int?,       // Nombre de buts de l’équipe domicile
                      var awayGoals: Int?,       // Nombre de buts de l’équipe extérieure
-                     var elapsed: Int? )
+                     var elapsed: Int?,
+    var fixtureId: Long?)
 // MatchResponse.kt
 data class MatchResponse(
     val get: String,

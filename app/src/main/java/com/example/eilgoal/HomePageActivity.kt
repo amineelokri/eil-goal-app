@@ -1,5 +1,6 @@
 package com.example.eilgoal
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -7,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.eilgoal.service.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -25,11 +27,16 @@ class HomePageActivity : AppCompatActivity() {
         val goals: TextView = findViewById(R.id.goals)
         val victime: ImageView = findViewById(R.id.vicitime)
         val victimeText: TextView = findViewById(R.id.victimeText)
+        val favIcon: ImageView = findViewById(R.id.fav)
 
         // 🔹 Charger les données de l'API
         loadLiveMatch(team1, team2, teamImage1, teamImage2, date, goals)
         loadInjury(victime, victimeText)
         loadNextMatches(recyclerView)
+        favIcon.setOnClickListener {
+            val intent = Intent(this, MatchFavorisActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     // 📌 Charger les matchs en direct
@@ -119,7 +126,8 @@ class HomePageActivity : AppCompatActivity() {
                                         date = match.fixture.date.substring(0, 10),
                                         homeGoals = match.goals.home ?: 0,
                                         awayGoals = match.goals.away ?: 0,
-                                        elapsed = match.fixture.status.elapsed ?: 0
+                                        elapsed = match.fixture.status.elapsed ?: 0,
+                                        fixtureId = match.fixture.id
                                     )
                                 )
                             }
@@ -158,7 +166,8 @@ class HomePageActivity : AppCompatActivity() {
                                     date = "${match.goals.home ?: 0} - ${match.goals.away ?: 0}", // Score final
                                     homeGoals = match.goals.home ?: 0,
                                     awayGoals = match.goals.away ?: 0,
-                                    elapsed = match.fixture.status.elapsed ?: 90 // Durée du match
+                                    elapsed = match.fixture.status.elapsed ?: 90,
+                                    fixtureId = match.fixture.id// Durée du match
                                 )
                             }
 
@@ -197,7 +206,8 @@ class HomePageActivity : AppCompatActivity() {
                                     date = "${match.goals.home ?: 0} - ${match.goals.away ?: 0}", // Afficher le score final
                                     homeGoals = match.goals.home ?: 0,
                                     awayGoals = match.goals.away ?: 0,
-                                    elapsed = match.fixture.status.elapsed ?: 90 // Temps total du match
+                                    elapsed = match.fixture.status.elapsed ?: 90,
+                                    fixtureId = match.fixture.id// Temps total du match
                                 )
                             }
                             callback(matchList) // Retourne la liste des matchs à l'appelant

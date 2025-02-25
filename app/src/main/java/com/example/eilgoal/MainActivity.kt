@@ -19,7 +19,12 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        val intent = Intent(this, MatchFavorisActivity::class.java)
+
+        // Create an intent to start MatchDetailsActivity
+        val intent = Intent(this, LoginPageActivity::class.java)
+
+
+        // Start the activity
         startActivity(intent)
     }
 }
