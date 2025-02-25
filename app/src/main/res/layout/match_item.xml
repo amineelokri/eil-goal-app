@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/googleimage_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Logo de l'équipe domicile -->
+        <ImageView
+            android:id="@+id/equipeImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="Logo équipe domicile"
+            android:src="@drawable/team_placeholder" />
+
+        <!-- Nom de l'équipe domicile -->
+
+        <!-- Date et heure du match, centré horizontalement -->
+
+        <TextView
+            android:id="@+id/equipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_toEndOf="@id/equipeImage"
+            android:text="Équipe Domicile"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Date &amp; Heure"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+
+            android:textStyle="bold" />
+
+        <!-- Logo de l'équipe visiteur, aligné à droite -->
+        <ImageView
+            android:id="@+id/equipe2Image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Logo équipe visiteur"
+            android:src="@drawable/team_placeholder" />
+
+        <!-- Nom de l'équipe visiteur, à gauche de l'image -->
+        <TextView
+            android:id="@+id/equipe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@id/equipe2Image"
+            android:text="Équipe Visiteur"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:layout_centerVertical="true"
+ />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

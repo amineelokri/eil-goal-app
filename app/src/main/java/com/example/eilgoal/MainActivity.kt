@@ -19,8 +19,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        val intent = Intent(this, LoginPageActivity::class.java)
+        val intent = Intent(this, MatchFavorisActivity::class.java)
         startActivity(intent)
-
     }
 }

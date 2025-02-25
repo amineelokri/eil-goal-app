@@ -36,6 +36,6 @@
         <activity android:name=".HomePageActivity"/>
         <activity android:name="com.example.eilco.RegisterActivity"/>
         <activity android:name=".MatchDetailsActivity"/>
+        <activity android:name=".MatchFavorisActivity" />
     </application>
-
 </manifest>
