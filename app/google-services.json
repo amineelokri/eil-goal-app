@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "644271572263",
-    "project_id": "eilgoalmobile",
-    "storage_bucket": "eilgoalmobile.firebasestorage.app"
+    "project_number": "101164061474",
+    "project_id": "eilgoalmobile2",
+    "storage_bucket": "eilgoalmobile2.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:644271572263:android:87b40e3c811e4fd8205502",
+        "mobilesdk_app_id": "1:101164061474:android:2a3b604124a8396abb8b7b",
         "android_client_info": {
           "package_name": "com.example.eilgoal"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "644271572263-7nd34umajkrk1dmf3tfjqepj8e20k5a5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDAFkWjcfFHd9Ve3YBJG_d-_9nu2rvvgVs"
+          "current_key": "AIzaSyAefL5BDdWfM1yhPcGoGca4kr8wVu3VTJs"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "644271572263-7nd34umajkrk1dmf3tfjqepj8e20k5a5.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
